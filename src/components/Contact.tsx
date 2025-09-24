@@ -106,26 +106,26 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'Sumesh.S@example.com',
-      link: 'mailto:Sumesh.S@example.com'
+      value: 'sudhisumesh01@gmail.com',
+      link: 'mailto:sudhisumesh01@gmail.com'
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+1 (555) 123-4567',
-      link: 'tel:+15551234567'
+      value: '+91 94 46 93 87 63',
+      link: 'tel:+919446938763'
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'San Francisco, CA',
-      link: 'https://maps.google.com/?q=San+Francisco,CA'
+      value: 'Kochi,Kerala',
+      link: 'https://maps.google.com/?q=Kochi,Kerala'
     }
   ];
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/Sumesh.S', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com/in/Sumesh.S', label: 'LinkedIn' },
+    { icon: Github, href: 'https://github.com/SudhiSumesh/Sumesh.S/', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/sumeshsudhi', label: 'LinkedIn' },
     { icon: Twitter, href: 'https://twitter.com/Sumesh.S', label: 'Twitter' },
   ];
 
@@ -221,7 +221,7 @@ const Contact = () => {
 
               {/* Success Message */}
               <div className="success-message opacity-0 text-center py-4">
-                <div className="inline-flex items-center gap-2 px-4 py-2 bg-terminal-green/10 border border-terminal-green/20 rounded-lg text-terminal-green font-mono text-sm">
+                <div className="success-message inline-flex items-center opacity-0 gap-2 px-4 py-2 bg-terminal-green/10 border border-terminal-green/20 rounded-lg text-terminal-green font-mono text-sm">
                   ✓ Message sent successfully!
                 </div>
               </div>
@@ -294,7 +294,7 @@ const Contact = () => {
             <div className="glass rounded-2xl p-8 crt-effect">
               <div className="font-mono text-sm space-y-2">
                 <div className="text-terminal-green">Sumesh.S@portfolio:~$ echo "quote"</div>
-                <div className="text-terminal-amber glow-text animate-flicker">
+                <div className="text-terminal-amber glw-text animate-flicker">
                   "Code is like humor. When you have to explain it, it's bad."
                 </div>
                 <div className="text-muted-foreground">- Cory House</div>

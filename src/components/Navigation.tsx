@@ -40,9 +40,9 @@ const Navigation = () => {
   ];
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/Sumesh.S', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com/in/Sumesh.S', label: 'LinkedIn' },
-    { icon: Mail, href: 'mailto:Sumesh.S@example.com', label: 'Email' },
+    { icon: Github, href: 'https://github.com/SudhiSumesh/Sumesh.S/', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/sumeshsudhi', label: 'LinkedIn' },
+    { icon: Mail, href: 'mailto:sudhisumesh01@gmai.com', label: 'Email' },
   ];
 
   const scrollToSection = (href: string) => {

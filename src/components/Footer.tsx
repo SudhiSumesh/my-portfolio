@@ -113,9 +113,9 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Brand Section */}
           <div className="footer-item space-y-4">
-            <div className="font-mono text-xl font-bold text-primary glow-text">
-              <span className="text-terminal-amber">{'<'}</span>
-              Sumesh.S
+            <div className="font-mono text-xl font-bold text-primary gow-text">
+              <span className="text-terminal-amber">{'< '}</span>
+              sumesh.dev
               <span className="text-terminal-amber">{' />'}</span>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
@@ -199,7 +199,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             {/* Copyright */}
             <div className="flex items-center gap-2 text-sm text-muted-foreground font-mono">
-              <span>© 2024 Sumesh.S Code. Made with</span>
+              <span>© {new Date().getFullYear()} sumesh.s Code. Made with</span>
               <Heart className="text-destructive animate-glow" size={14} />
               <span>and lots of ☕</span>
             </div>
@@ -210,7 +210,7 @@ const Footer = () => {
               <span>:</span>
               <span className="text-terminal-cyan">~</span>
               <span>$ whoami</span>
-              <span className="text-primary ml-2 glow-text animate-flicker">developer</span>
+              <span className="text-primary ml-2 glow-tex animate-flicker">developer</span>
             </div>
           </div>
 
