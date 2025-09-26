@@ -1,7 +1,8 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import profileImage from '@/assets/profile.png';
+// import profileImage from '@/assets/profile.png';
+import profileImage from '@/assets/profile-ai.png';
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -85,20 +86,55 @@ const About = () => {
     return () => ctx.revert();
   }, []);
 
-  const skills = [
-    { name: 'React', icon: '⚛️' },
-    { name: 'Node.js', icon: '🟢' },
-    { name: 'Python', icon: '🐍' },
-    { name: 'Next.js', icon: '▲' },
-    { name: 'TypeScript', icon: '🔷' },
-    { name: 'Docker', icon: '🐋' },
-    { name: 'AWS', icon: '☁️' },
-    { name: 'MySQL', icon: '🗄️' },
-    { name: 'MongoDB', icon: '🍃' },
-    { name: 'Express', icon: '🚀' },
-    { name: 'GSAP', icon: '🎭' },
-    { name: 'Git', icon: '📚' }
-  ];
+  // const skills = [
+  //   { name: 'React', icon: '⚛️' },
+  //   { name: 'Node.js', icon: '🟢' },
+  //   { name: 'Python', icon: '🐍' },
+  //   { name: 'Next.js', icon: '▲' },
+  //   { name: 'TypeScript', icon: '🔷' },
+  //   { name: 'Docker', icon: '🐋' },
+  //   { name: 'AWS', icon: '☁️' },
+  //   { name: 'MySQL', icon: '🗄️' },
+  //   { name: 'MongoDB', icon: '🍃' },
+  //   { name: 'Express', icon: '🚀' },
+  //   { name: 'GSAP', icon: '🎭' },
+  //   { name: 'Git', icon: '📚' }
+  // ];
+const skills = [
+  { name: 'React', icon: '⚛️' },
+  { name: 'Node.js', icon: '🟢' },
+  { name: 'Python', icon: '🐍' },
+  { name: 'Next.js', icon: '▲' },
+  { name: 'TypeScript', icon: '🔷' },
+  { name: 'Docker', icon: '🐋' },
+  { name: 'AWS', icon: '☁️' },
+  { name: 'MySQL', icon: '🗄️' },
+  { name: 'MongoDB', icon: '🍃' },
+  { name: 'Express', icon: '🚀' },
+  { name: 'GSAP', icon: '🎭' },
+  { name: 'Git', icon: '📚' },
+  { name: 'HTML5', icon: '📄' },
+  { name: 'CSS3', icon: '🎨' },
+  { name: 'SCSS', icon: '💅' },
+  { name: 'JavaScript', icon: '✨' },
+  { name: 'Redux', icon: '🔁' },
+  { name: 'Socket.IO', icon: '🔌' },
+  { name: 'React Flow', icon: '🔀' },
+  { name: 'React-dnd', icon: '🧲' },
+  { name: 'Tailwind CSS', icon: '🌬️' },
+  { name: 'Bootstrap', icon: '👢' },
+  { name: 'Material-UI', icon: '📐' },
+  { name: 'Ant Design', icon: '🐜' },
+  { name: 'RESTful APIs', icon: '🔗' },
+  { name: 'JWT Authentication', icon: '🔒' },
+  { name: 'Keycloak', icon: '🛡️' },
+  { name: 'FastAPI', icon: '⚡' },
+  { name: 'SQLite', icon: '💾' },
+  { name: 'Bitbucket', icon: '🧺' },
+  { name: 'Jira', icon: '📋' },
+  { name: 'Postman', icon: '📮' },
+  { name: 'VS Code', icon: '🖥️' }
+];
 
   return (
     <section id="about" ref={sectionRef} className="py-20 lg:py-32 relative">

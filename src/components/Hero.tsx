@@ -113,7 +113,7 @@ const Hero = () => {
 
               {/* Tech Stack Display */}
               <div className="flex flex-wrap gap-2 text-sm font-mono">
-                {['React', 'Node.js', 'Python', 'Next.js', 'Docker', 'AWS', 'MySQL'].map((tech) => (
+                {['React', 'Node.js', 'Python', 'Next.js', 'Docker', 'AWS', 'MySQL','MongoDB'].map((tech) => (
                   <span 
                     key={tech}
                     className="px-3 py-1 bg-background-secondary border border-border rounded text-primary hover:shadow-neon transition-all duration-200"
@@ -163,7 +163,7 @@ const Hero = () => {
 
       {/* Floating Particles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(6)].map((_, i) => (
+        {[...Array(26)].map((_, i) => (
           <div
             key={i}
             className={`absolute w-1 h-1 bg-primary rounded-full animate-float opacity-40`}

@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { Menu, X, Github, Linkedin, Mail } from 'lucide-react';
-
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -42,7 +41,7 @@ const Navigation = () => {
   const socialLinks = [
     { icon: Github, href: 'https://github.com/SudhiSumesh/Sumesh.S/', label: 'GitHub' },
     { icon: Linkedin, href: 'https://www.linkedin.com/in/sumeshsudhi', label: 'LinkedIn' },
-    { icon: Mail, href: 'mailto:sudhisumesh01@gmai.com', label: 'Email' },
+    { icon: Mail, href: 'mailto:sudhisumesh01@gmail.com', label: 'Email' },
   ];
 
   const scrollToSection = (href: string) => {
@@ -99,9 +98,11 @@ const Navigation = () => {
               </div>
 
               {/* Hire Me Button */}
+              <a  href="/sumesh.s.pdf" target='_blank'>
               <button className="px-6 py-2 bg-transparent border border-primary text-primary font-mono text-sm hover:bg-primary hover:text-primary-foreground transition-all duration-200 rounded neon-glow">
-                Hire Me
+               Resume
               </button>
+              </a>
             </div>
 
             {/* Mobile Menu Button */}
@@ -175,9 +176,12 @@ const Navigation = () => {
             </div>
 
             {/* Hire Me Button */}
+            <a href="/sumesh.s.pdf" target='_blank' >
+
             <button className="w-full px-6 py-3 bg-transparent border border-primary text-primary font-mono hover:bg-primary hover:text-primary-foreground transition-all duration-200 rounded neon-glow">
               Hire Me
             </button>
+            </a>
           </div>
         </div>
       </div>

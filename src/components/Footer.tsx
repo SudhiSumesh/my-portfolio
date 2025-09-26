@@ -80,7 +80,7 @@ const Footer = () => {
     'Frontend Design',
     'Backend Architecture',
     'API Development',
-    '3D Web Experiences',
+    // '3D Web Experiences',
     'Performance Optimization'
   ];
 

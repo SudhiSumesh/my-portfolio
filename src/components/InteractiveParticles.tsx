@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from 'react';
-import { gsap } from 'gsap';
 
 interface Particle {
   id: number;
@@ -23,12 +22,13 @@ const InteractiveParticles = () => {
   const [isInitialized, setIsInitialized] = useState(false);
 
   // Color palette for particles
-  const colors = ['#00ffff', '#ffff00', '#ffffff', '#ff00ff', '#00ff00'];
+  const colors = ['#00ffff', '#ffff00', '#ffffff', '#ff00ff', '#00ff00' , '#ff4500', '#1e90ff', '#ff69b4', '#7fff00', '#ff6347', '#40e0d0', '#ff1493'];
 
   // Generate particles
   const generateParticles = (width: number, height: number): Particle[] => {
     const particles: Particle[] = [];
     const particleCount = Math.floor((width * height) / 6000);
+    // const particleCount = Math.min(80, Math.floor((width * height) / 8000)); // Reduced particle count
     
     for (let i = 0; i < particleCount; i++) {
       const x = Math.random() * width;
@@ -220,8 +220,8 @@ const InteractiveParticles = () => {
   return (
     <div 
       ref={containerRef}
-      className="relative w-full h-full bg-gradient-to-br from-background via-background-secondary to-background overflow-hidden cursor-crosshair rounded-xl"
-      style={{ minHeight: '400px' }}
+      className="relative w-full h-full bg-gradient-to-br from-background via-background-secondary to-background overflow-hidden cursor-crosshair rounded-xl md:min-[400px]:"
+      // style={{ minHeight: '400px' }}
     >
       {/* Canvas for particles */}
       <canvas 

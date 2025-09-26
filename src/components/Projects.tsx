@@ -2,12 +2,10 @@ import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ExternalLink, Github } from 'lucide-react';
-import project1 from '@/assets/project-1.png';
-import project2 from '@/assets/project-2.png';
-import project3 from '@/assets/project-3.png';
-import project4 from '@/assets/project-4.png';
-import project5 from '@/assets/project-5.png';
-import project6 from '@/assets/project-6.png';
+import project1 from '@/assets/spotify.jpg';
+import project2 from '@/assets/movieapp.jpg';
+import project3 from '@/assets/ecom.png';
+import project4 from '@/assets/sort.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -74,58 +72,44 @@ const Projects = () => {
     return () => ctx.revert();
   }, []);
 
-  const projects = [
-    {
-      title: "3D Interactive Web",
-      description: "Create immersive 3D web experiences with modern technologies",
-      image: project1,
-      tech: ["React", "Three.js", "GSAP"],
-      github: "https://github.com/Sumesh.S/project1",
-      live: "https://project1.Sumesh.Scode.com"
+const projects = [
+  {
+    title: "Full Stack E-commerce Application",
+    description: "Feature-rich e-commerce platform with secure authentication, Razorpay integration, and invoice generation.",
+    tech: ["React.js", "Node.js", "MongoDB", "Tailwind CSS", "JWT", "Razorpay"],
+    github: "https://github.com/SudhiSumesh/javaScript-Ecommerce-website.git",
+    live:"https://sudhisumesh.github.io/javaScript-Ecommerce-website/",
+    image:project3
+  },
+  {
+    title: "Sorting Algorithms Visualizer",
+    description: "Interactive visualization of 5 common sorting algorithms with Big O analysis and code examples.",
+    tech: ["JavaScript", "HTML5", "CSS3"],
+    github: "https://github.com/SudhiSumesh/Sorting-Visualizer",
+    live: "https://sorting-algorithms-visualized-wds.netlify.app/",
+    image:project4
     },
-    {
-      title: "Next-Level Gaming UI",
-      description: "Advanced gaming interface with real-time interactions",
-      image: project2,
-      tech: ["Next.js", "TypeScript", "WebSocket"],
-      github: "https://github.com/Sumesh.S/project2",
-      live: "https://project2.Sumesh.Scode.com"
-    },
-    {
-      title: "3D Portfolio Platform",
-      description: "Portfolio showcase with 3D elements and smooth animations",
-      image: project3,
-      tech: ["React", "Spline", "Framer Motion"],
-      github: "https://github.com/Sumesh.S/project3",
-      live: "https://project3.Sumesh.Scode.com"
-    },
-    {
-      title: "Gaming Website",
-      description: "Complete gaming platform with modern UI/UX",
-      image: project4,
-      tech: ["Vue.js", "Node.js", "MongoDB"],
-      github: "https://github.com/Sumesh.S/project4",
-      live: "https://project4.Sumesh.Scode.com"
-    },
-    {
-      title: "Animation Tools Hub",
-      description: "Collection of web animation tools and tutorials",
-      image: project5,
-      tech: ["React", "GSAP", "CSS3"],
-      github: "https://github.com/Sumesh.S/project5",
-      live: "https://project5.Sumesh.Scode.com"
-    },
-    {
-      title: "Animated Portfolio",
-      description: "Step-by-step tutorial for creating animated portfolios",
-      image: project6,
-      tech: ["HTML5", "CSS3", "JavaScript"],
-      github: "https://github.com/Sumesh.S/project6",
-      live: "https://project6.Sumesh.Sicode.com"
-    }
-  ];
+  {
+    title: "Music App",
+    description: "Music streaming app using Spotify API with search, playback controls, and token-based authentication.",
+    tech: ["React", "Spotify API", "Axios", "React-Router-Dom", "LocalStorage"],
+    github: "https://github.com/SudhiSumesh/Music_App.git",
+    live: "https://github.com/SudhiSumesh/Music_App.git",
+    image:project1
+  },
+  {
+    title: "Movie App",
+    description: "Movie showcase app using TMDB API with dynamic data fetching and YouTube trailer integration.",
+    tech: ["React", "Axios", "TMDB API", "react-youtube"],
+    github: "https://github.com/SudhiSumesh/Movie_App",
+    live: "https://sudhisumesh.github.io/Movie_App/",
+    image:project2
+  },
+  
+];
 
-  return (
+
+return (
     <section id="projects" ref={sectionRef} className="py-20 lg:py-32 relative overflow-hidden">
       {/* Section Header */}
       <div className="container mx-auto px-6 mb-16">
@@ -207,9 +191,11 @@ const Projects = () => {
                 </div>
 
                 {/* Action Button */}
-                <button className="w-full py-2 mt-4 bg-transparent border border-primary text-primary font-mono text-sm hover:bg-primary hover:text-primary-foreground transition-all duration-200 rounded neon-glow opacity-0 group-hover:opacity-100">
+                  <a href={project.live}   target="_blank">
+                <button   className="w-full py-2 mt-4 bg-transparent border border-primary text-primary font-mono text-sm hover:bg-primary hover:text-primary-foreground transition-all duration-200 rounded neon-glow opacity-0 group-hover:opacity-100">
                   View Project
                 </button>
+                  </a>
               </div>
             </div>
           ))}
