@@ -114,9 +114,9 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="footer-item space-y-4">
             <div className="font-mono text-xl font-bold text-primary gow-text">
-              <span className="text-terminal-amber">{'< '}</span>
+              <span className="text-terminal-amber">{'<'}</span>
               sumesh.dev
-              <span className="text-terminal-amber">{' />'}</span>
+              <span className="text-terminal-amber">{'/>'}</span>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
               Crafting digital experiences with modern technologies. 

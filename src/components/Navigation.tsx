@@ -64,9 +64,9 @@ const Navigation = () => {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="font-mono text-xl font-bold text-primary glow-ext">
-              <span className="text-terminal-amber">{'< '}</span>
+              <span className="text-terminal-amber">{'<'}</span>
                sumesh.dev
-              <span className="text-terminal-amber">{' />'}</span>
+              <span className="text-terminal-amber">{'/>'}</span>
             </div>
 
             {/* Desktop Navigation */}

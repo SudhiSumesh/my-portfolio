@@ -123,14 +123,14 @@ return (
           <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
             A collection of my best work showcasing modern web technologies and creative solutions
           </p>
-          <div className="text-sm font-mono text-muted-foreground">
+          <div className="hidden md:block text-sm font-mono text-muted-foreground">
             <span className="text-terminal-amber">→</span> Scroll horizontally to explore
           </div>
         </div>
       </div>
 
       {/* Horizontal Scroll Container */}
-      <div ref={containerRef} className="relative h-screen flex items-center">
+      <div ref={containerRef} className="hidden relative h-screen md:flex items-center">
         <div className="flex gap-8 px-6">
           {projects.map((project, index) => (
             <div 
