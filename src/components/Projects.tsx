@@ -110,9 +110,9 @@ const projects = [
 
 
 return (
-    <section id="projects" ref={sectionRef} className="py-20 lg:py-32 relative overflow-hidden">
+    <section id="projects" ref={sectionRef} className="py-20 lg:py-2 relative overflow-hidden">
       {/* Section Header */}
-      <div className="container mx-auto px-6 mb-16">
+      <div className="container mx-auto px-6">
         <div className="text-center">
           <div className="font-mono text-sm text-primary mb-4">
             <span className="text-terminal-green">$</span> ls projects/
@@ -123,9 +123,9 @@ return (
           <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
             A collection of my best work showcasing modern web technologies and creative solutions
           </p>
-          <div className="hidden md:block text-sm font-mono text-muted-foreground">
+          {/* <div className="hidden md:block text-sm font-mono text-muted-foreground">
             <span className="text-terminal-amber">→</span> Scroll horizontally to explore
-          </div>
+          </div> */}
         </div>
       </div>
 
